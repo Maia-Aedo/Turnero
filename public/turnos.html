@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pantalla de turnos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        
+    </div>
+    <table>
+        <tr>
+            <td valign="middle" class="ticket-actual">
+                <span class="title">TURNO</span><br>
+                <span id="lblindice1" class="numActual-indice"></span>
+                <span id="ticketPpal" class="turnoActual"></span>                
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <span class="subtitle">TURNO</span><br>
+                            <span id="lblindice2" class="indiceSecundario"></span>
+                            <span id="ticketSec2" class="ticket-secundario"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="subtitle">TURNO</span><br>
+                            <span id="lblindice3" class="ticket-secundario"></span>
+                            <span id="ticketSec3" class="ticket-secundario"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="subtitle">TURNO</span><br>
+                            <span id="lblindice4" class="indiceSecundario"></span>
+                            <span id="ticketSec4" class="ticket-secundario"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/turnos.js"></script>
+</body>
+
+</html>
